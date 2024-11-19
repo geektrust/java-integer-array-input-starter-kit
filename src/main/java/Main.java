@@ -4,7 +4,7 @@ public class Main {
     /* Implement your solution inside this method. */
     public String handle(String input) {
         // WRITE YOUR CODE HERE.
-
+        return input;
     }
 
 
