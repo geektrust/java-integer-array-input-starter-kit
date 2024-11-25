@@ -1,7 +1,8 @@
 
 public class Main {
 
-    /* Implement your solution inside this method. */
+    /* Implement your solution inside this method.
+       The ouput return value should be a string. */
     public String handle(int[] input) {
         // WRITE YOUR CODE HERE.
         return null;
