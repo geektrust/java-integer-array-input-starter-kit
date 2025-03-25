@@ -1,15 +1,6 @@
 
 public class Main {
 
-    /* Implement your solution inside this method.
-       The ouput return value should be a string. */
-    public String handle(int[] input) {
-        // WRITE YOUR CODE HERE.
-        return null;
-    }
-
-
-
     /*
      * *****************************************************************************
      * DO NOT EDIT THIS CODE.
@@ -26,7 +17,7 @@ public class Main {
         for (int i = 0; i < stringNumbers.length; i++) {
             inputArr[i] = Integer.parseInt(stringNumbers[i]);
         }
-        String output = new Main().handle(inputArr);
+        String output = new Solution().handle(inputArr);
         System.out.println(output);
     }
 }
