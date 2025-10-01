@@ -20,13 +20,21 @@ public class Main {
      */
     public static void main(String[] args) {
         String input = args[0];
-        String[] stringNumbers = input.replace("[", "").replace("]", "").split(",\\s*");
+       input = input.replace("[", "").replace("]", "").trim();
 
-        int[] inputArr = new int[stringNumbers.length];
-        for (int i = 0; i < stringNumbers.length; i++) {
-            inputArr[i] = Integer.parseInt(stringNumbers[i]);
+        int[] inputArr;
+        if (input.isEmpty()) {
+            inputArr = new int[0];
+        } else {
+            String[] stringNumbers = input.split(",\\s*");
+            inputArr = new int[stringNumbers.length];
+            for (int i = 0; i < stringNumbers.length; i++) {
+                inputArr[i] = Integer.parseInt(stringNumbers[i]);
+            }
         }
+        
         String output = new Main().handle(inputArr);
         System.out.println(output);
     }
 }
+
